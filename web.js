@@ -1,17 +1,47 @@
-var express = require('express');
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-var app = express.createServer(express.logger());
+<meta charset-"utf-8">
+<title>My First Bitstarter</title>
+<link type="text/css" rel="stylesheet"
+	    href="https://d369qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.3.css">
+<style type="text/css">
 
+body{
+padding-top: 20px;
+padding-bottom: 40px;
+}
 
-var fs = require('fs');
-var str = fs.readFileSync('index.html');
+.container{
+width: 960px;
+}
 
+p.lead{
+padding-top: 15px;
+}
 
-app.get('/', function(request, response) {
- response.send(str);
-});
+.navigation, .pitch, .section1, .section2, .faq, .footer{
+padding: 10px 0px 10px 0px;
+}
 
-var port = process.env.PORT || 5000;
-app.listen(port, function() {
-  console.log("Listening on " + port);
-});
+.video, .thermometer, .order, .social{
+border: 1px dotted;
+text-align: center;
+}
+
+.video{
+height: 124px;
+line-height: 124px;
+}
+
+.thermometer, .order, .social{
+height: 40px;
+line-height: 40px;
+}
+
+div.row{
+border: 1px solid;
+}
+</style>
+</head>
